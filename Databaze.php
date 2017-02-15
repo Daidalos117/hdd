@@ -34,11 +34,13 @@ class Databaze {
     /**
      * @param $sql
      * @param array $parametry
+     * @param bool $debug
      * @return PDOStatement
      */
-    public static function dotaz($sql, $parametry = array()) {
+    public static function dotaz($sql, $parametry = array(), $debug = false) {
         $dotaz = self::$spojeni->prepare($sql);
         $dotaz->execute($parametry);
+        if($debug) $dotaz->debugDumpParams();
         return $dotaz;
     }
 
@@ -57,4 +59,6 @@ class Databaze {
     public static function getLastID(){
         return self::$spojeni->lastInsertId();
     }
+
+
 }

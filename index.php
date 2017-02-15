@@ -6,48 +6,8 @@
 
     <link rel="stylesheet" type="text/css" href="src/datatables.min.css"/>
     <link rel="stylesheet" href="src/bootstrap.min.css">
-    <style>
-        body{
-            background-image: url("img/matrix.jpg");
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .background-layer{
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: fixed;
+    <link rel="stylesheet" href="src/style.css">
 
-            top: 0;
-            left: 0;
-            background-color: rgba(34, 34, 34, .8);
-        }
-        .container{
-            z-index: 3;
-        }
-        h1{
-            font-size: 10rem;
-            text-align: center;
-            margin: 1rem;
-        }
-        .db-update{
-            font-size: 20px;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
-        .table tr td:nth-child(2){
-            word-break: break-all
-        }
-        .btn-danger{
-            background-color: transparent;
-            color: #e74c3c;
-        }
-        #reset{
-            display: block;
-            opacity: .7;
-            cursor: pointer;
-        }
-    </style>
 
 </head>
 
@@ -74,7 +34,7 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
     <div class="col-md-12">
         <h1>Movies</h1>
 
-        <h4>Last DB update </h4>
+        <p>Last DB update </p>
 
         <span class="label <?=$label_color?> db-update"><?php echo $last_seen->format("d.m.y H:m") ?></span>
         <div class="text-center">
@@ -92,6 +52,8 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
                 <th>Directory</th>
                 <th>Size</th>
                 <th>File edited</th>
+                <th></th>
+                <th><a href="" id="search-favorite" ><img src="img/favorite.svg" class="animated"> </a> </th>
             </tr>
             </thead>
             <tbody>
@@ -99,9 +61,14 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
             $query = Databaze::dotaz("SELECT * FROM files left join directories on files.directory_id=directories.id order by file_edited DESC");
             $files = $query->fetchAll();
             foreach ($files as $file){
-                echo "<tr>";
-                echo "<td>".$file[0]."</td>";
-                echo "<td>".$file["file"]."</td>";
+                echo "<tr data-id=\"'.$id.'\">";
+                $id = $file[0];
+                echo "<td>".$id."</td>";
+                echo "<td>
+                        <a class='movie-link' target='_blank' href='https://www.google.cz/#q=".urlencode($file["file"])."'>"
+                        .$file["file"].
+                    "</a></td>";
+
                 echo "<td>".$file["year"]."</td>";
                 $created = new DateTime($file["created"]);
                 echo "<td><span data-toggle='tooltip' title='".$created->format("H:m:s")."'> ".$created->format("d.m.y")."</span></td>";
@@ -110,7 +77,16 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
                 echo "<td>".$file["directory"]."</td>";
                 echo "<td>".human_filesize($file["size_bytes"])."</td>";
                 $edit = new DateTime($file["file_edited"]);
-                echo "<td data-toggle='tooltip' title='".$edit->format("H:m:s")."'>".$edit->format("d.m.y")."</td>";
+                echo "<td >
+                    <span data-toggle='tooltip' title='".$edit->format("H:m:s")."'>
+                    ".$edit->format("d.m.y")."</span>
+                </td>";
+                echo "<td class='checked-".$id."'>".$file["checked"]."</td>";
+                $checked = ($file["checked"]) ? "checked" : "";
+                echo '<td><div class="material-switch">
+                            <input id="switch-'.$id.'" name="switch-'.$id.'" data-id="'.$id.'" '.$checked.' class="input-switch" type="checkbox"/>
+                            <label for="switch-'.$id.'" class="label-success"></label>
+                        </div></td>';
                 echo "</tr>";
                 $lastId = $file[0];
             }
@@ -134,19 +110,38 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
             $.fn.dataTable.moment( 'dd.mm.YY' );
             $.fn.dataTable.moment( 'dd.mm.YY' );
 
+            var favorite = false;
+
             var table = $('#table').DataTable({
+                responsive: true,
                 "pageLength": 100,
-                "order": []
+                "order": [],
+                columnDefs: [ { orderable: false, targets: [8,9] } ],
             });
 
             $('#random-btn').on('click', function () {
                 var random = Math.floor(Math.random() * <?= $lastId ?>) + 1;
-                regExSearch = '^\\s' + random +'\\s*$';
+                var reg = "^\\s*"+random+"\\s*$";
                 table
-                    .columns( 0 )
-                    .search( random)
+                    .column( 0 )
+                    .search( reg, true)
                     .draw();
             } );
+
+            $('#search-favorite').on('click', function (e) {
+                e.preventDefault();
+                //$(this).find("img").addClass("pulse");
+
+                animate($(this).find("img").get(0),"pulse");
+                var search = favorite ? "" : 1;
+                table
+                    .column( 8 )
+                    .search( search )
+                    .draw();
+                favorite = !favorite;
+            } );
+
+
             $("#reset").on("click",function () {
                  table
                      .search("")
@@ -156,6 +151,29 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
 
             $('[data-toggle="tooltip"]').tooltip();
 
+            $("#table").on("click",".input-switch",function(){
+                var id = $(this).data("id");
+                var checked = $(this).prop("checked");
+                var json = "id="+id+"&checked="+checked;
+                $("td.checked-"+id).html(Number(checked));
+
+                var tr = $('#table tr[data-id='+id+']');
+                setTimeout(function () {
+                    table
+                        .rows(  )
+                        .invalidate()
+                        .draw();
+                },1000);
+                $.ajax({url: "checked.php", type: "POST", data: json });
+            });
+            function animate(element, animation){
+                element.classList.remove(animation);
+                void element.offsetWidth;
+                element.classList.add(animation);
+                element.addEventListener("animationend", function(){
+                    element.classList.remove(animation);
+                }, false);
+            }
         } );
     </script>
 </body>

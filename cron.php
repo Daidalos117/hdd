@@ -27,7 +27,6 @@ foreach ($moviesDirectories as $key => $directory){
 
         $newFile = $newDir."/".$file;
         $fileSize = filesize($newFile);
-
         $time = filemtime($newFile);
 
         $query = Databaze::dotaz("SELECT * FROM files WHERE file = ? AND directory_id = ?",[$file,$directory["id"]]);

@@ -1,0 +1,155 @@
+@mixin transition($what,$time){
+  -webkit-transition: $what $time ease-in-out;;
+  -moz-transition: $what $time ease-in-out;;
+  transition: $what $time ease-in-out;;
+}
+
+
+
+body{
+  background-image: url("../img/matrix.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.background-layer{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(34, 34, 34, .8);
+}
+.container{
+  z-index: 3;
+}
+h1{
+  font-size: 10rem;
+  text-align: center;
+  margin: 1rem;
+}
+.db-update{
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.table tr td:nth-child(2){
+  word-break: break-all
+}
+.btn-danger{
+  background-color: transparent;
+  color: #e74c3c;
+}
+#reset{
+  display: block;
+  opacity: .5;
+  cursor: pointer;
+}
+a.movie-link{
+  color: #ffffff;
+  text-decoration: none !important;
+  @include transition(border, 0.9s);
+  &:hover{
+    color: #ffffff;
+    border-bottom: 1px double rgba(255,255,255,.6);
+  }
+}
+
+#search-favorite img{
+  width: 25px;
+}
+.btn:focus{
+  outline: none !important;
+}
+
+table th:nth-child(9),table td:nth-child(9){
+  display: none;
+}
+
+
+/* Material switch */
+.material-switch > input[type="checkbox"] {
+  display: none;
+}
+
+.material-switch > label {
+  cursor: pointer;
+  height: 0px;
+  position: relative;
+  width: 40px;
+}
+
+.material-switch > label::before {
+  background: rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  content: '';
+  height: 16px;
+  margin-top: -8px;
+  position:absolute;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+  width: 40px;
+}
+.material-switch > label::after {
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  content: '';
+  height: 24px;
+  left: -4px;
+  margin-top: -8px;
+  position: absolute;
+  top: -4px;
+  transition: all 0.3s ease-in-out;
+  width: 24px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+  background: inherit;
+  opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+  background: inherit;
+  left: 20px;
+}
+
+
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
