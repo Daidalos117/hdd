@@ -11,6 +11,9 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+svg {
+  max-width: 100%;
+}
 .background-layer{
   content: "";
   width: 100%;
@@ -65,8 +68,15 @@ a.movie-link{
 table th:nth-child(9),table td:nth-child(9){
   display: none;
 }
-
-
+.random-el {
+  text-align: right;
+}
+.random-btn {
+  margin-bottom: 2rem;
+}
+.visibility-img {
+  width: 3rem;
+}
 /* Material switch */
 .material-switch > input[type="checkbox"] {
   display: none;

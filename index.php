@@ -36,11 +36,19 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
 
         <p>Last DB update </p>
 
-        <span class="label <?=$label_color?> db-update"><?php echo $last_seen->format("d.m.y H:m") ?></span>
-        <div class="text-center">
-            <button class="btn btn-danger" id="random-btn">Random</button>
-            <a id="reset">Reset</a>
+        <div class="row">
+            <div class="col-md-6">
+                <span class="label <?=$label_color?> db-update"><?php echo $last_seen->format("d.m.y H:m") ?></span>
+            </div>
+            <div class="col-md-6">
+                <div class="random-el">
+                    <button class="btn btn-danger random-btn" id="random-btn">Random</button>
+                    <a id="reset" class="hidden">Reset</a>
+                </div>
+            </div>
         </div>
+
+
         <table id="table" class="table  table-striped table-responsive" >
             <thead>
             <tr>
@@ -53,16 +61,17 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
                 <th>Size</th>
                 <th>File edited</th>
                 <th></th>
-                <th><a href="" id="search-favorite" ><img src="img/favorite.svg" class="animated"> </a> </th>
+                <th><a href="#" id="search-favorite" ><img src="img/favorite.svg" class="animated"> </a> </th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
             <?php
-            $query = Databaze::dotaz("SELECT * FROM files left join directories on files.directory_id=directories.id order by file_edited DESC");
+            $query = Databaze::dotaz("SELECT * FROM files left join directories on files.directory_id=directories.id where hidden != 1 order by file_edited DESC");
             $files = $query->fetchAll();
             foreach ($files as $file){
-                echo "<tr data-id=\"'.$id.'\">";
                 $id = $file[0];
+                echo "<tr data-id='".$id."'>";
                 echo "<td>".$id."</td>";
                 echo "<td>
                         <a class='movie-link' target='_blank' href='https://www.google.cz/#q=".urlencode($file["file"])."'>"
@@ -87,6 +96,12 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
                             <input id="switch-'.$id.'" name="switch-'.$id.'" data-id="'.$id.'" '.$checked.' class="input-switch" type="checkbox"/>
                             <label for="switch-'.$id.'" class="label-success"></label>
                         </div></td>';
+                echo '<td>
+                        <a href="#" id="hide-this" data-id="'.$id.'">
+                            <img src="img/visibility.svg" alt="" class="visibility-img">
+                        </a>
+                      </td>
+                        ';
                 echo "</tr>";
                 $lastId = $file[0];
             }
@@ -111,21 +126,23 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
             $.fn.dataTable.moment( 'dd.mm.YY' );
 
             var favorite = false;
-
+            var clickedRandom = false;
             var table = $('#table').DataTable({
                 responsive: true,
                 "pageLength": 100,
                 "order": [],
-                columnDefs: [ { orderable: false, targets: [8,9] } ],
+                columnDefs: [ { orderable: false, targets: [8,9, 10] } ],
             });
 
             $('#random-btn').on('click', function () {
                 var random = Math.floor(Math.random() * <?= $lastId ?>) + 1;
                 var reg = "^\\s*"+random+"\\s*$";
+                resetTable();
                 table
                     .column( 0 )
                     .search( reg, true)
                     .draw();
+                clickedRandom = true;
             } );
 
             $('#search-favorite').on('click', function (e) {
@@ -143,18 +160,28 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
 
 
             $("#reset").on("click",function () {
-                 table
-                     .search("")
-                     .columns().search("")
-                     .draw();
+                resetTable();
             })
+            $("#table_filter").on("click",function () {
+                if(clickedRandom){
+                    resetTable();
+                    clickedRandom = false;
+                }
+            })
+            function resetTable() {
+                table
+                    .search("")
+                    .columns().search("")
+                    .draw();
+            }
+
 
             $('[data-toggle="tooltip"]').tooltip();
-
+            //favorite click
             $("#table").on("click",".input-switch",function(){
                 var id = $(this).data("id");
                 var checked = $(this).prop("checked");
-                var json = "id="+id+"&checked="+checked;
+                var json = "id="+id+"&checked="+checked+"&type=check";
                 $("td.checked-"+id).html(Number(checked));
 
                 var tr = $('#table tr[data-id='+id+']');
@@ -164,8 +191,27 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
                         .invalidate()
                         .draw();
                 },1000);
-                $.ajax({url: "checked.php", type: "POST", data: json });
+                $.ajax({url: "ajax.php", type: "POST", data: json });
             });
+
+            $("#table").on("click","#hide-this",function(){
+                var id = $(this).data("id");
+                var tr = $('#table tr[data-id='+id+']');
+                var json = "id="+id+"&type=hide";
+                console.log(tr);
+                tr.hide(500);
+                setTimeout(function () {
+                    table
+                        .rows(  )
+                        .invalidate()
+                        .draw();
+                    tr.hide();
+                },1000);
+                $.ajax({url: "ajax.php", type: "POST", data: json });
+            });
+
+
+
             function animate(element, animation){
                 element.classList.remove(animation);
                 void element.offsetWidth;
