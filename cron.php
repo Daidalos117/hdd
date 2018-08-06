@@ -6,7 +6,8 @@
  * Project: hdd
  */
 
-$dir = "/Volumes/Seagate Backup Plus Drive/";
+//$dir = "/Volumes/Seagate Backup Plus Drive/";
+$dir = "smb://Samba Shares on bambi._smb._tcp.local/Seagate Backup Plus Drive";
 if(!dir($dir)){
     die();
 }

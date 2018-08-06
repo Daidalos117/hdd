@@ -67,11 +67,14 @@ $label_color = ($diff > 3) ? "label-danger" : "label-info";
             </thead>
             <tbody>
             <?php
-            $query = Databaze::dotaz("SELECT * FROM files left join directories on files.directory_id=directories.id where hidden != 1 order by file_edited DESC");
+
+            $hiddenSql = (!isset($_GET['hidden'])) ? 'hidden != 1' : 'hidden in(0,1)';
+            $query = Databaze::dotaz("SELECT * FROM files left join directories on files.directory_id=directories.id where ".$hiddenSql." order by file_edited DESC");
             $files = $query->fetchAll();
             foreach ($files as $file){
                 $id = $file[0];
-                echo "<tr data-id='".$id."'>";
+                $hiddenClass = ($file['hidden'] == 1) ? 'hidden-row' : '';
+                echo "<tr data-id='".$id."' class='".$hiddenClass."'>";
                 echo "<td>".$id."</td>";
                 echo "<td>
                         <a class='movie-link' target='_blank' href='https://www.google.cz/#q=".urlencode($file["file"])."'>"

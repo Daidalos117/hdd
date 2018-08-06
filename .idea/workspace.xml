@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a93ed6a-4a58-4a18-b844-42b7b2d9cd9f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/visibility.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/checked.php" afterPath="$PROJECT_DIR$/ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style.css" afterPath="$PROJECT_DIR$/src/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style.css.map" afterPath="$PROJECT_DIR$/src/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/style.scss" afterPath="$PROJECT_DIR$/src/style.scss" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cron.php" afterPath="$PROJECT_DIR$/cron.php" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" afterPath="$PROJECT_DIR$/src/style.css" />
+      <change beforePath="$PROJECT_DIR$/src/style.css.map" afterPath="$PROJECT_DIR$/src/style.css.map" />
+      <change beforePath="$PROJECT_DIR$/src/style.scss" afterPath="$PROJECT_DIR$/src/style.scss" />
     </list>
     <ignored path="hdd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,44 +27,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cron.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cron.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="234">
+              <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
               <folding>
                 <element signature="e#6#85#0#PHP" expanded="true" />
-                <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-                <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-                <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-                <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-                <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-                <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-                <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+                <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+                <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+                <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+                <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+                <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+                <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+                <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+            <state relative-caret-position="1950">
+              <caret line="75" column="67" lean-forward="false" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
               <folding>
-                <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-                <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-                <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-                <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+                <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+                <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+                <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+                <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+                <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
               </folding>
             </state>
           </provider>
@@ -75,8 +72,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="77" column="10" lean-forward="false" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+            <state relative-caret-position="2132">
+              <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -121,14 +118,14 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Databaze.php" />
         <option value="$PROJECT_DIR$/checked.php" />
-        <option value="$PROJECT_DIR$/cron.php" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test/n.css" />
         <option value="$PROJECT_DIR$/test/index.html" />
         <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/style.scss" />
         <option value="$PROJECT_DIR$/ajax.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/src/style.scss" />
+        <option value="$PROJECT_DIR$/cron.php" />
       </list>
     </option>
   </component>
@@ -161,8 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,6 +185,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,14 +223,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -271,6 +260,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -302,35 +299,37 @@
       <workItem from="1487164515083" duration="420000" />
       <workItem from="1489772215739" duration="15000" />
       <workItem from="1511984068899" duration="406000" />
-      <workItem from="1512300183234" duration="2043000" />
+      <workItem from="1512300183234" duration="3127000" />
+      <workItem from="1516531336518" duration="93000" />
+      <workItem from="1516531594693" duration="115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36487000" />
+    <option name="totallyTimeSpent" value="37779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31066823" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,13 +373,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -390,19 +389,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -441,13 +439,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -457,19 +455,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -508,13 +505,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -524,19 +521,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -575,13 +571,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -591,19 +587,18 @@
         <state relative-caret-position="960">
           <caret line="64" column="60" lean-forward="false" selection-start-line="64" selection-start-column="60" selection-end-line="64" selection-end-column="60" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -622,13 +617,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -638,19 +633,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -669,13 +663,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -685,19 +679,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -716,13 +709,13 @@
           <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -732,19 +725,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
           </folding>
         </state>
       </provider>
@@ -763,13 +755,13 @@
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
@@ -866,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,31 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-            <marker date="1484657193000" expanded="true" signature="273:298" ph="SELECT * FRO... directories" />
-            <marker date="1484657193000" expanded="true" signature="761:816" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1054:1158" ph="UPDATE `file... " />
-            <marker date="1484657193000" expanded="true" signature="1122:1158" ph="SELECT * FRO... files" />
-            <marker date="1484657193000" expanded="true" signature="1243:1357" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1377" ph="INSERT INTO `files`... " />
-            <marker date="1484657193000" expanded="true" signature="1243:1378" ph="INSERT INTO `files`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="77" column="10" lean-forward="false" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -915,24 +881,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2132">
+          <caret line="82" column="23" lean-forward="false" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+        <state relative-caret-position="1950">
+          <caret line="75" column="67" lean-forward="false" selection-start-line="75" selection-start-column="67" selection-end-line="75" selection-end-column="67" />
           <folding>
-            <marker date="1512302502437" expanded="true" signature="617:659" ph="SELECT max(l... files" />
-            <marker date="1512302502437" expanded="true" signature="2193:2315" ph="SELECT * FRO... files" />
-            <marker date="1512302502437" expanded="true" signature="2544:2740" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3395:3556" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3480:3534" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3727:4026" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="3756:4021" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4088" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4055:4271" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4107:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4125:4243" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="4964:5041" ph="..." />
-            <marker date="1512302502437" expanded="true" signature="5003:5041" ph="{...}" />
+            <marker date="1512303187723" expanded="true" signature="617:659" ph="SELECT max(l... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2365" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2281:2406" ph="SELECT * FRO... files" />
+            <marker date="1512303187723" expanded="true" signature="2735:2931" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3586:3747" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3671:3725" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3918:4217" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="3947:4212" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4279" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4246:4462" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4298:4434" ph="..." />
+            <marker date="1512303187723" expanded="true" signature="4316:4434" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="77" lean-forward="false" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+          <folding>
+            <element signature="e#6#85#0#PHP" expanded="true" />
+            <marker date="1516531414549" expanded="true" signature="355:380" ph="SELECT * FRO... directories" />
+            <marker date="1516531414549" expanded="true" signature="843:898" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1136:1240" ph="UPDATE `file... " />
+            <marker date="1516531414549" expanded="true" signature="1204:1240" ph="SELECT * FRO... files" />
+            <marker date="1516531414549" expanded="true" signature="1325:1439" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1459" ph="INSERT INTO `files`... " />
+            <marker date="1516531414549" expanded="true" signature="1325:1460" ph="INSERT INTO `files`... " />
           </folding>
         </state>
       </provider>
